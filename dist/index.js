@@ -13,8 +13,10 @@ const { Command } = require("commander");
 const fs = require("fs");
 const path = require("path");
 const figlet = require("figlet");
+const p = require("@clack/promts");
 const program = new Command();
-console.log(figlet.textSync("Dir Manager"));
+console.log(figlet.fontSync("Dir Manager"));
+console.log(p.color("green").bold("Welcome to the Directory Manager CLI!"));
 program
     .version("1.0.0")
     .description("An example CLI for managing a directory")
