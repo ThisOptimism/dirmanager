@@ -7,7 +7,7 @@ DirManager is a command-line interface (CLI) tool designed to help you manage di
 To install DirManager, simply clone this repository to your local machine:
 
 ```bash
-git clone <repository_url>
+git clone git@github.com:ThisOptimism/dirmanager.git
 ```
 
 Once cloned, you can install the dirmanager globally using npm:
@@ -21,7 +21,7 @@ npm install -g .
 
 DirManager provides the following commands:
 
-- `-l, --ls [value]`: List the contents of the specified directory. If no directory is provided, it defaults to the current directory.
+- `-l [value]`: List the contents of the specified directory. If no directory is provided, it defaults to the current directory.
 
   Example:
 
@@ -29,7 +29,7 @@ DirManager provides the following commands:
   dirmanager --ls ./path/to/directory
   ```
 
-- `-m, --mkdir <value>`: Create a new directory with the specified name.
+- `-m <alue>`: Create a new directory with the specified name.
 
   Example:
 
@@ -37,12 +37,12 @@ DirManager provides the following commands:
   dirmanager --mkdir new_directory
   ```
 
-- `-t, --touch <value>`: Create a new file with the specified name.
+- `-t <value>`: Create a new file with the specified name.
 
   Example:
 
   ```bash
-  dirmanager --touch new_file.txt
+  dirmanager --t new_file.txt
   ```
 
 ## Options
