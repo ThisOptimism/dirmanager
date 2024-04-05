@@ -4,12 +4,15 @@ const { Command } = require("commander");
 const fs = require("fs");
 const path = require("path");
 const figlet = require("figlet");
-const p = require("@clack/promts")
+const p = require("@clack/prompts")
+const color = require("picocolors");
 
 const program = new Command();
 
-console.log(figlet.fontSync("Dir Manager"));
-console.log(p.color("green").bold("Welcome to the Directory Manager CLI!"))
+console.log(figlet.textSync("Dir Manager"));
+p.intro(`${color.bgMagenta(color.black('Welcome to the directory manager CLI!'))}`)
+console.log('');
+console.log('');
 
 program
   .version("1.0.0")
